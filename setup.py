@@ -34,9 +34,9 @@ def parse_dependency_links(file_name):
 
 
 setup(
-    name='common-notification',
+    name='switch2common-notification',
     version=audiofield.__version__,
-    description='Django application which allows audio file upload and conversion to mp3, wav and ogg format',
+    description='',
     long_description=README,
     url='http://github.com/Star2Billing/common_notification',
     author='Belaid Arezqui',
@@ -46,8 +46,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     package_data={},
-    install_requires=parse_requirements('common_notification/requirements.txt'),
-    dependency_links=parse_dependency_links('common_notification/requirements.txt'),
+    install_requires=parse_requirements('requirements.txt'),
+    dependency_links=parse_dependency_links('requirements.txt'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
