@@ -60,18 +60,19 @@
 <div class="span12">
     <div class="row">
         <div class="btn-group">
-            <button class="btn btn-small">{% trans "Action" %}</button>
-            <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+            <button class="btn">{% trans "Action" %}</button>
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="#" onclick="mark_read_all_button()">{% trans "Mark all as read" %}</a></li>
                 <li><a href="#" onclick="make_read_button()">{% trans "Mark as read" %}</a></li>
                 <li><a href="#" onclick="delete_button()">{% trans "Delete notifications" %}</a></li>
             </ul>
         </div>
+        <a class="btn btn-info" href="#" onclick="mark_read_all_button()">{% trans "Mark all as read" %}</a>
     </div>
 </div>
+<br/><br/>
 <div class="span12">
     <div class="row">
         <form method="POST" action="del/0/" enctype="multipart/form-data" id="ListForm">
