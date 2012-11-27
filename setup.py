@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-import audiofield
+import common_notification
 import os
 import re
 
@@ -35,7 +35,7 @@ def parse_dependency_links(file_name):
 
 setup(
     name='switch2common-notification',
-    version=audiofield.__version__,
+    version=common_notification.__version__,
     description='',
     long_description=README,
     url='http://github.com/Star2Billing/common_notification',
